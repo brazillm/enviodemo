@@ -1,0 +1,21 @@
+$blue: #305291;
+$grey: #666666;
+
+@mixin headertext {
+  text-align: center;
+  text-transform: uppercase;
+  clear: both;
+  font-family:sans-serif;
+}
+@mixin centering {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+@mixin paragraphtext{
+  font-family: sans-serif;
+  line-height: 25px;
+
+
+}

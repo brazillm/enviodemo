@@ -1,0 +1,215 @@
+@import "variables";
+
+header{
+  position:relative;
+   width:100%;
+   height:500px;
+   overflow: hidden;
+   margin-bottom: -25px;
+ }
+
+video{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -5;
+}
+img {
+  float:left;
+  height: 75px;
+  margin-left: 75px;
+  margin-top: 10px;
+
+}
+
+nav {
+   font-family: sans-serif;
+   margin-top: 20px;
+   margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+li {
+  display: inline-block;
+   margin-left: 5px;
+ }
+
+a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: $blue;
+}
+
+a:hover {
+  background-color: white;
+  color: $blue;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.drop-nav {
+  position: absolute;
+  display: none;
+}
+
+.drop-nav li {
+  width: 150px;
+  margin: 0;
+}
+
+.dropdown:hover .drop-nav{
+  display: block;
+}
+
+.Headerbox{
+  font-family:sans-serif;
+  @include centering;
+}
+
+h1 {
+  @include headertext;
+
+  color:$blue;
+  font-size: 45px;
+
+
+}
+
+.protecting {
+  color:white;
+  @include headertext;
+  font-size: 20px;
+}
+
+.title{
+  height:300px;
+  background-color:$blue;
+  position: relative;
+}
+.pledgebody{
+  width: 50%;
+  margin:0 auto;
+  @include centering;
+}
+.pledge{
+  font-size: 30px;
+  color: white;
+  @include headertext;
+  margin-bottom: 20px;
+}
+
+.pledgetext{
+  margin-top:10px;
+  color:white;
+  @include paragraphtext;
+  text-align: center;
+}
+
+.mainbody {
+  background-color: #f2f2f2;
+}
+
+.issuesgroup{
+  width: 60%;
+  margin:0 auto;
+  background-color: #f2f2f2;
+  margin-top: -25px;
+  padding-bottom: 30px;
+}
+.issues {
+  font-size: 30px;
+  padding-top: 30px;
+  @include headertext;
+  margin-bottom: 20px;
+  color:#666666;
+}
+.issuestext{
+  color:#666666;
+  @include paragraphtext;
+  text-align: center;
+}
+
+.mainbox{
+  height:300px;
+  width: 22%;
+  background-color: white;
+  margin: 9px;
+  display:inline-block;
+  vertical-align: top;
+  text-align: center;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue;
+  }
+ i {
+  font-size: 30px;
+      border: 1px solid #305291;
+      color: $blue;
+      padding: 10px;
+      border-radius: 50%;
+      width: 30px;
+
+}
+i:hover{
+  background-color: $blue;
+  color:white;
+}
+.fa{
+  display: inline-block;
+}
+  p {
+    text-align: center;
+  }
+}
+
+
+footer {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  color: $blue;
+  font-family: sans-serif;
+}
+footer p{
+   display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+  video {
+    width: auto;
+  }
+
+  .pledgebody{
+    width: 100%;
+    margin:0 auto;
+    @include centering;
+  }
+
+  .issuesgroup, footer, .mainbox{
+    width:100%;
+    padding:5px;
+  }
+  .mainbox {
+    width: 100%;
+    margin:0;
+    padding: 0;
+    padding-top:10px;
+    display: block;
+  }
+  footer p{
+    width:100%;
+    
+  }
+}
